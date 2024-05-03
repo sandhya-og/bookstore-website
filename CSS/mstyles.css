@@ -1,0 +1,264 @@
+
+body, h1, h2, h3, p, ul, li, th {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #0e0027;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.header h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+    padding: 5px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff9900;
+}
+
+.background-image {
+    background-image: url("m2.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    position: absolute;
+    width: 50%;
+    height: 35%;
+    background-color: rgba(0, 0, 0, 0.316);
+}
+
+.heading {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 0px;
+}
+
+.heading2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.categories {
+    background-color: #0e0027;
+    color: #fff;
+    text-align: left;
+    padding-left: 10%;
+}
+
+.categories h3 {
+    font-size: xx-large;
+}
+
+.container {
+    padding: 3%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container a {
+    text-decoration: none;
+    color: #fff;
+}
+
+th {
+    border: 1px solid white;
+    font-size: x-large;
+    color: #fff;
+    padding: 25px;
+    cursor: pointer;
+    border-radius: 10px;
+    border-right: 0px;
+}
+
+.featured-books {
+    text-align: center;
+    padding: 30px 15px;
+    background-image: url("m1.jpeg");
+    background-size: contain;
+}
+
+.featured-books h3 {
+    font-size: 2em;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.book {
+    display: inline-block;
+    margin: 0 20px;
+    text-align: center;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.book:hover {
+    transform: scale(1.05);
+}
+
+.book img {
+    max-width: fit-content;
+    height: fit-content;
+    border-radius: 1px;
+}
+
+.book h4 {
+    font-size: 17px;
+    margin-top: 1px;
+}
+
+.book p {
+    color: #777;
+    margin-top: 5px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #0073e6;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #005aa3;
+}
+
+.newsletter {
+    text-align: center;
+    background-color: #0073e6;
+    color: #fff;
+    padding: 30px 0;
+}
+
+.newsletter h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.newsletter p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.newsletter form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.newsletter input[type="email"] {
+    padding: 10px;
+    width: 300px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    font-size: 1.1em;
+}
+
+.newsletter button {
+    background-color: #ff9900;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    color: #fff;
+    font-size: 1.5em;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.social-icons a:hover {
+    color: #ff9900;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}

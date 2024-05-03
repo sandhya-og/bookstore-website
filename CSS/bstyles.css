@@ -1,0 +1,182 @@
+
+.sidepanel  {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    height: 250px;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+  
+.sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+  
+.sidepanel a:hover {
+    color: #f1f1f1;
+}
+  
+.sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    cursor: pointer;
+    right: 25px;
+    font-size: 36px;
+}
+  
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+  
+.openbtn:hover {
+    background-color:#444;
+}
+
+header {
+    background-size: cover;
+    background-color: #333; 
+    color: #fff;
+}
+.navbar {
+    padding: 10px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.left-menu, .right-menu {
+    display: flex; 
+    align-items: center; 
+}
+
+.right-menu ul {
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.right-menu li {
+    margin-right: 20px; 
+}
+
+.right-menu a {
+    padding: 10px;
+    text-decoration: none; 
+    color: #fff; 
+}
+
+.right-menu a:hover {
+    text-decoration: underline; 
+}
+
+.book {
+    background-color: #fff; 
+    border: 1px solid #ccc;
+    padding: 23px;
+    margin: 20px;
+    text-align: center;
+    width: 200px;
+    height: 470px;
+    display: inline-block;
+    vertical-align:top;
+    border-radius: 0px;
+    box-shadow: 0px 0px 5px  rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out; 
+    position: relative;
+ }
+ 
+ .book:hover {
+    transform: scale(1.05);
+    z-index: 1; 
+ }
+ 
+ .book img {
+    max-width: 100%;
+    height: auto;
+ }
+ 
+ .book h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #333;
+ }
+ 
+ .book p {
+    margin: 5px 5px;
+    color: #666;
+    height: fit-content;
+ }
+ 
+ .book button {
+    background-color: #0073e6;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+ }
+ 
+ .zoomed-in-description {
+    display: none;
+    width: 100%;
+    position: fixed; 
+    bottom: 10%;
+    top:40%;
+    left: 50%;
+    overflow: scroll;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.95);
+    border: 1px solid #ccc;
+    padding: 5px;
+    max-width: 230px;
+    text-align: center;
+    box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+    
+ }
+ 
+ .book:hover .zoomed-in-description {
+    display: block;
+       
+ }
+
+ .cart {
+    background-color:#fff;
+    padding: 7px;
+    float: right;
+    margin-right: 20px;
+    position: relative;
+}
+
+.cart-icon {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.cart-panel {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 200px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}

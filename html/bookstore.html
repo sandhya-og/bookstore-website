@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="D:\Sandhya\wd\Website\CSS\bstyles.css">
+    <title>Bookstore</title>
+</head>
+<body>
+
+    <header>
+
+        <h1 style="text-align: center; font-size:xx-large;"><br>Welcome to Our Bookstore</h1>
+        
+        <nav class="navbar">
+
+            <div class="left-menu">
+
+                <div id="mySidepanel" class="sidepanel">
+                    <ul>
+                        <a class="closebtn" onclick="closeNav()">×</a>
+                        <li><a href="D:\Sandhya\wd\Website\html\main.html" target="_blank"><b>Home</b></a></li>
+                        <a href="#"><b>Genres &#9660;</b></a>
+                        <li><a href="#Fiction"><b>Fiction</b></a></li>
+                        <li><a href="#Nonfiction"><b>Nonfiction</b></a></li>
+                        <li><a href="#Others"><b>Others</b></a></li>
+                    </ul>
+                </div>
+
+                <button class="openbtn" onclick="openNav()">☰ Menu</button>  
+
+            </div>
+
+            <div class="right-menu">
+                <ul>
+                    <a href="D:\Sandhya\wd\Website\html\authors.html" target="_blank">Authors</a>
+                    <a href="D:\Sandhya\wd\Website\html\library.html" target="_blank">Library</a>
+                    <a href="D:\Sandhya\wd\Website\html\login.html" target="_blank">Login</a>
+                    <a href="D:\Sandhya\wd\Website\html\registration.html" target="_blank">Sign Up</a>
+                </ul>
+            </div>
+
+        </nav>
+
+    </header>
+
+    <main>
+        
+        <aside>
+            <div class="cart">
+                <button class="cart-icon">🛒</button>
+                <div id="cartPanel" class="cart-panel"></div>
+            </div>
+        </aside>    
+
+        <section id="Fiction">
+
+            <h2 style="text-align: center; font-size:x-large;
+             background-color:gainsboro; padding: 10px;">Fiction Books</h2>
+
+            <div class="book">
+                <img src="D:\Sandhya\wd\Website\images\b1.jpeg" alt="The Alchemist">
+                <h2>The Alchemist</h2>
+                <p>Author: Paulo Coelho</p>
+                <p>Price: Rs. 300</p>
+                <button>Add to Cart</button>
+                <div class="zoomed-in-description">
+                    <h3>Alchemist</h3>
+                    <p>Author: Paulo Coelho</p>
+                    <p> The Alchemist is a classic novel in which a boy named Santiago 
+                        embarks on a journey seeking treasure in the Egyptian pyramids after 
+                        having a recurring dream about it and on the way meets mentors, falls
+                        in love, and most importantly, learns the true importance of who 
+                        he is and how to improve himself and focus on what really matters in life.</p>
+                </div>
+            </div>
+            
+            <div class="book">
+                <img src="D:\Sandhya\wd\Website\images\b2.jpeg" alt="The Kite Runner">
+                <h2>The Kite Runner</h2>
+                <p>Author: Khaled Hosseini</p>
+                <p>Price: Rs. 300</p>
+                <button>Add to Cart</button>
+                <div class="zoomed-in-description">
+                    <h3>The Kite Runner</h3>
+                    <p>Author: Khaled Hosseini</p>
+                    <p> The Kite Runner, written by Khaled Hosseini, tells the extraordinary story
+                        of an unlikely friendship between a wealthy Afghan boy, named Amir, and
+                        Hassan, the son of his father’s servant — who he later finds out,
+                        after Hassan’s death, has always been his half-brother.</p>
+                </div>
+            </div>
+
+            <div class="book">
+                <img src="D:\Sandhya\wd\Website\images\b3.jpg" alt="To kill a Mocking bird">
+                <h2>To Kill a Mockingbird</h2>
+                <p>Author: Harper Lee</p>
+                <p>Price: Rs. 300</p>
+                <button>Add to Cart</button>
+                <div class="zoomed-in-description">
+                    <h3>To Kill a Mockingbird</h3>
+                    <p>Author: Harper Lee</p>
+                    <p>It is set in the fictional town of Maycomb, Ala., during the Great Depression.
+                        The protagonist is Jean Louise (“Scout”) Finch, an intelligent and 
+                        unconventional girl who ages from six to nine years old during the course of
+                        the novel. She and her brother, Jem, are raised by their widowed father, 
+                        Atticus Finch, a prominent lawyer who encourages his children to be empathetic 
+                        and just. When Tom Robinson, a Black man, is falsely accused of raping
+                        Mayella Ewell, a white woman, Atticus agrees to defend him despite
+                        threats from the community. Although Atticus’s defense is strong, Tom 
+                        is convicted, and he is later killed while trying to escape custody.
+                        A character compares his death to “the senseless slaughter of songbirds,”
+                        which echoes Atticus’s comment to his children that it is “a sin to kill a mockingbird.”</p>
+                </div>
+            </div>
+
+            <div class="book">
+                <img src="D:\Sandhya\wd\Website\images\b4.jpeg" alt="The Midnight Library: A Novel">
+                <h2>The Midnight Library: A Novel</h2>
+                <p>Author: Matt Haig</p>
+                <p>Price: Rs. 300</p>
+                <button>Add to Cart</button>
+                <div class="zoomed-in-description">
+                    <h3>The Midnight Library: A Novel</h3>
+                    <p>Author: Matt Haig</p>
+                    <p> The Midnight Library tells the story of Nora, a depressed
+                        woman in her 30s, who, on the day she decides to die, finds
+                        herself in a library full of lives she could have lived, where 
+                        she discovers there’s a lot more to life, even her current one, 
+                        than she had ever imagined.</p>
+                </div>
+            </div>
+
+            <div class="book">
+                <img src="D:\Sandhya\wd\Website\images\b5.jpg" alt="The Fault in Our Stars">
+                <h2>The Fault in Our Stars</h2>
+                <p>Author: John Green</p>
+                <p>Price: Rs. 300</p>
+                <button>Add to Cart</button>
+                <div class="zoomed-in-description">
+                    <h3>The Fault in Our Stars</h3>
+                    <p>Author: John Green</p>
+                    <p> The Fault in Our Stars by John Green is a young adult fiction
+                        novel that narrates the story of a 16-year-old girl who is diagnosed 
+                        with cancer. She joins a support group where she meets Augustus, 
+                        and there is a rollercoaster of emotions throughout this novel 
+                        as the relationship between Hazel and Augustus develops. Hazel and 
+                        Augustus are able to find comfort in each other through the tough 
+                        times and learn to lean into each other which makes them both realize 
+                        that they are not alone. They find love in each other and feel hopeful 
+                        for each other, also while allowing the readers to learn about their 
+                        inner struggles.</p>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section id="Nonfiction">
+
+            <h2 style="text-align: center; font-size:x-large;
+            background-color:gainsboro; padding: 10px;">Non-Fiction Books</h2>
+
+            <div class="book">
+                <img src="D:\Sandhya\wd\Website\images\b6.webp" alt="The Psychology of Money">
+                <h2>The Psychology of Money</h2>
+                <p>Author: Morgan Housel</p>
+                <p>Price: Rs. 300</p>
+                <button>Add to Cart</button>
+                <div class="zoomed-in-description">
+                    <h3>The Psychology of Money</h3>
+                    <p>Author: Morgan Housel</p>
+                    <p> In the Psychology of Money, Morgan Housel teaches you how to have
+                        a better relationship with money and to make smarter financial 
+                        decisions. Instead of pretending that humans are ROI-optimizing 
+                        machines, he shows you how your psychology can work for and against you.</p>
+                </div>
+            </div>
+            
+            <div class="book">
+                <img src="D:\Sandhya\wd\Website\images\b7.webp" alt="The Power of Your Subconscious Mind">
+                <h2>The Power of Your Subconscious Mind</h2>
+                <p>Author: Dr. Joseph Murphy</p>
+                <p>Price: Rs. 300</p>
+                <button>Add to Cart</button>
+                <div class="zoomed-in-description">
+                    <h3>The Power of Your Subconscious Mind</h3>
+                    <p>Author: Dr. Joseph Murphy</p>
+                    <p> In this book, Murphy contemplates a theory that the subconscious 
+                        mind has a powerful effect on everything we do and experience. 
+                        He says that, if we as an individual can believe in something 
+                        and visualize it clearly, we can remove all the mental blocks 
+                        to achieve the desired results. He concludes that we can bring 
+                        a thought to reality by wholly and truly believing in it. And, 
+                        he illustrates various activities to explore the power of your 
+                        Subconscious mind.</p>
+                </div>
+            </div>
+
+            <div class="book">
+                <img src="D:\Sandhya\wd\Website\images\b8.webp" alt="How To Win Friends And Influence People">
+                <h2>How To Win Friends And Influence People</h2>
+                <p>Author: Dale Carnegie</p>
+                <p>Price: Rs. 300</p>
+                <button>Add to Cart</button>
+                <div class="zoomed-in-description">
+                    <h3>How To Win Friends And Influence People</h3>
+                    <p>Author: Dale Carnegie</p>
+                    <p> How To Win Friends And Influence People teaches you countless
+                        principles to become a likable person, handle your relationships 
+                        well, win others over and help them change their behavior without 
+                        being intrusive.</p>
+                </div>
+            </div>
+
+            <div class="book">
+                <img src="D:\Sandhya\wd\Website\images\b9.jpg" alt="To Infinity and Beyond">
+                <h2>To Infinity and Beyond</h2>
+                <p>Author: Neil deGrasse Tyson and Lindsey Nyx Walker</p>
+                <p>Price: Rs. 300</p>
+                <button>Add to Cart</button>
+                <div class="zoomed-in-description">
+                    <h3>To Infinity and Beyond</h3>
+                    <p>Author: Neil deGrasse Tyson and Lindsey Nyx Walker</p>
+                    <p> The book begins as we leave Earth, encountering new truths 
+                        about our planet’s atmosphere, the nature of sunlight, and the 
+                        many missions that have demystified our galactic neighbors. But the farther 
+                        out we travel, the weirder things get. What’s a void and what’s a vacuum? 
+                        How can light be a wave and a particle at the same time? When we finally 
+                        arrive in the blackness of outer space, Tyson takes on the spookiest 
+                        phenomena of the cosmos: parallel worlds, black holes, time travel, and more.
+                        For science junkies and fans of the conundrums that astrophysicists 
+                        often ponder, To Infinity and Beyond is an enlightening adventure into 
+                        the farthest reaches of the cosmos.</p>
+                </div>
+            </div>
+
+            <div class="book">
+                <img src="D:\Sandhya\wd\Website\images\b10.jpg" alt="Talking to Strangers">
+                <h2>Talking to Strangers</h2>
+                <p>Author: Malcolm Gladwell</p>
+                <p>Price: Rs. 300</p>
+                <button>Add to Cart</button>
+                <div class="zoomed-in-description">
+                    <h3>Talking to Strangers</h3>
+                    <p>Author: Malcolm Gladwell</p>
+                    <p> Gladwell begins Talking to Strangers with an overview of the death 
+                        of Sandra Bland, which he sees as a tragic example of the misunderstanding, 
+                        conflict, and tragedy that result from our inability to understand and 
+                        interact with strangers. Each chapter of the book explores a 
+                        different element of this “stranger problem,” with the end goal of 
+                        identifying ways we can adapt our behavior to engage more productively 
+                        with the world’s increasingly diverse population.</p>
+                </div>
+            </div>
+
+        </section>
+
+
+        <section id="Others">
+
+            <h2 style="text-align: center; font-size:x-large;
+            background-color:gainsboro; padding: 10px;">Others</h2>
+
+            <div class="book">
+                <img src="D:\Sandhya\wd\Website\images\b11.jpeg" alt="Poetry">
+                <h2>Poetry</h2>
+                <button>Explore more</button><br><hr>
+                <div class="zoomed-in-description">
+                    <h3>Poetry</h3>
+                    <p> Poetry has been around for almost four thousand years. Like other forms of 
+                        literature, poetry is written to share ideas, express emotions, and create 
+                        imagery. Poets choose words for their meaning and acoustics, arranging 
+                        them to create a tempo known as the meter. Some poems incorporate 
+                        rhyme schemes, with two or more lines that end in like-sounding words.
+                        Today, poetry remains an important part of art and culture. 
+                        Every year, the United States Library of Congress appoints a Poet Laureate 
+                        to represent the art of poetry in America. From Shakespearean sonnets to 
+                        Maya Angelou’s reflective compositions, poems are long-lived, read and 
+                        recited for generations.</p>
+                </div>
+            </div>
+            
+            <div class="book">
+                <img src="D:\Sandhya\wd\Website\images\b12.jpg" alt="Drama">
+                <h2>Drama</h2>
+                <button>Explore more</button><br><hr>
+                <div class="zoomed-in-description">
+                    <h3>Drama</h3>
+                    <p> Drama includes plays and scripts written for the stage or screen,
+                        often presented through dialogue and action. Examples: "Romeo and Juliet" 
+                        by William Shakespeare, "Death of a Salesman" by Arthur Miller, 
+                        "A Streetcar Named Desire" by Tennessee Williams.</p>
+                </div>
+            </div>
+
+            <div class="book">
+                <img src="D:\Sandhya\wd\Website\images\b15.jpg" alt="Children's literature">
+                <h2>Children's literature</h2>
+                <button>Explore more</button><br><hr>
+                <div class="zoomed-in-description">
+                    <h3>Children's literature</h3>
+                    <p> Children's literature is any literature that is enjoyed by children. 
+                        It includes books, magazines, poems, and plays. Children's literature 
+                        is written for young people who are not yet interested in adult 
+                        literature or who may not have the reading skills or developmental 
+                        understandings necessary for it.</p>
+                </div>
+            </div>
+
+            <div class="book">
+                <img src="D:\Sandhya\wd\Website\images\b14.webp" alt="Self-Help and Motivational Books">
+                <h2>Self-Help and Motivational Books</h2>
+                <button>Explore more</button><br><hr>
+                <div class="zoomed-in-description">
+                    <h3>Self-Help and Motivational Books</h3>
+                    <p> Self-help books are all about change. A change of habits, character 
+                        traits, or your physical appearance – you name it. The thing is, 
+                        you have to make the change yourself.Every New Year’s Eve, you commit 
+                        to another version of “new year, new me.” But how does it look a few 
+                        months later? Has it ever happened to you that you ended up resolving 
+                        to make the same changes again the next year? Two years, three years, 
+                        four years in a row? Inevitably, we’ll ask ourselves: 
+                        How many times do I have to try this to succeed?</p>
+                </div>
+            </div>
+
+            <div class="book">
+                <img src="D:\Sandhya\wd\Website\images\b13.jpg" alt="Biography and Memoir:">
+                <h2>Biography and Memoir:</h2>
+                <button>Explore more</button><br><hr>
+                <div class="zoomed-in-description">
+                    <h3>Biography, Autobiography and Memoir:</h3>
+                    <p> Biography is a book written by someone else about another 
+                        person's life experiences. An autobiography is a book written by 
+                        the author about their own life experiences. A memoir is a book 
+                        written by the author about a specific time or event in their life.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <script>
+        function openNav() {
+        document.getElementById("mySidepanel").style.width = "250px";
+        }
+        
+        function closeNav() {
+        document.getElementById("mySidepanel").style.width = "0";
+        }
+    </script>
+</body>
+</html>

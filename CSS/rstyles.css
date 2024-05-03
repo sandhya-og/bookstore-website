@@ -1,0 +1,94 @@
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+
+body {
+background: url("r2.jpg");
+background-size:cover;
+background-position: center;
+background-attachment: fixed;
+font-family: Arial, sans-serif;
+color: #333;
+display: flex;
+justify-content: center;
+}
+
+
+.outer-container {
+display: flex;
+justify-content: center;
+align-items: center;
+height:100vh;
+width: 65vh;
+}
+
+.container {
+display: flex;
+align-items: center;
+background-color: rgba(255, 255, 255, 0.9);
+border-radius: 5px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+background-color: rgba(255, 255, 255, 0.6); 
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.container:hover {
+transform: scale(1.02);
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+.left {
+background-image: url("r1.png");
+background-size: cover;
+width: 50vh;
+height: 50vh;
+padding: 20px;
+text-align: center;
+}
+
+.left p {
+background-color: #00000070;
+color:#fff;
+padding: 10PX;
+font-size: 24px;
+}
+
+.right {
+height: 100%;
+width: 100%;
+padding: 20px;
+}
+
+a{
+color: #fff;
+text-decoration:none;
+}
+
+form {
+display: flex;
+flex-direction: column;
+}
+
+input, button {
+margin: 10px 0;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+button {
+background: linear-gradient(to bottom, #db34bf, #bc1a1a);
+color: #fff;
+cursor: pointer;
+}
+
+button:hover {
+background: linear-gradient(to bottom, #bc1a1a, #db34bf);
+}

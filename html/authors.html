@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Authors</title>
+    <link rel="stylesheet" href="D:\Sandhya\wd\Website\CSS\astyles.css">
+</head>
+<body>
+    <div class="navbar">
+        <h1>Author's Section</h1>
+        <div class="nav-links">
+            <a href="D:\Sandhya\wd\Website\html\main.html" target="_blank">Home</a>
+            <a href="D:\Sandhya\wd\Website\html\bookstore.html" target="_blank">Bookstore</a>
+            <a href="D:\Sandhya\wd\Website\html\login.html" target="_blank">Login</a>
+            <a href="D:\Sandhya\wd\Website\html\registration.html" target="_blank">Sign up</a>
+        </div>
+    </div>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>Genres</h2>
+        <ul>
+            <li><a href="#" onclick="filterAuthors('Fiction')">Fiction</a></li>
+            <li><a href="#" onclick="filterAuthors('Non-Fiction')">Non Fiction</a></li>
+            <li><a href="#" onclick="filterAuthors('Poetry')">Poetry</a></li>
+            <li><a href="#" onclick="filterAuthors('Self-Help and Motivational Books')">Self-Help and Motivational Books</a></li>
+            <li><a href="#" onclick="filterAuthors('All')">All</a></li> <!-- Added "All" option -->
+        </ul>
+    </div>
+
+    <div class="authors">
+        <div class="content">
+            <h2 style="text-align: center; font-size:x-large;
+            background-color:gainsboro; padding: 10px;">Fiction</h2>
+            <div class="books">
+                <div class="book" data-genre="Fiction">
+                    <img src="D:\Sandhya\wd\Website\images\a1.jpeg" alt="Book 3">
+                    <h2>Agatha Christie</h2>
+                    <p>Books written: 85</p>
+                    <p>Genre: Mystery</p>
+                </div>
+                <div class="book" data-genre="Fiction">
+                    <img src="D:\Sandhya\wd\Website\images\a2.jpeg" alt="Book 3">
+                    <h2>J.K. Rowling</h2>
+                    <p>Books written: 52</p>
+                    <p>Genre: Fantasy</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <h2 style="text-align: center; font-size:x-large;
+            background-color:gainsboro; padding: 10px;">Non-Fiction</h2>
+            <div class="books">
+                <div class="book" data-genre="Non-Fiction">
+                    <img src="D:\Sandhya\wd\Website\images\a3.jpeg" alt="Book 3">
+                    <h2>Yuval Noah Harari</h2>
+                    <p>Books written: 5</p>
+                    <p>Genre: History, Science</p>
+                </div>
+                <div class="book" data-genre="Non-Fiction">
+                    <img src="D:\Sandhya\wd\Website\images\a4.jpeg" alt="Book 3">
+                    <h2>Bill Bryson</h2>
+                    <p>Books written: 10</p>
+                    <p>Genre: Science, Travel</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <h2 style="text-align: center; font-size:x-large;
+            background-color:gainsboro; padding: 10px;">Poetry</h2>
+            <div class="books">
+                <div class="book" data-genre="Poetry">
+                    <img src="D:\Sandhya\wd\Website\images\a5.jpeg" alt="Book 3">
+                    <h2>Emily Dickinson</h2>
+                    <p>Books written: 11</p>
+                    <p>Genre: American poetry</p>
+                </div>
+                <div class="book" data-genre="Poetry">
+                    <img src="D:\Sandhya\wd\Website\images\a6.jpeg" alt="Book 3">
+                    <h2>William Shakespeare</h2>
+                    <p>Books written: 154</p>
+                    <p>Genre: Sonnets and plays</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <h2 style="text-align: center; font-size:x-large;
+            background-color:gainsboro; padding: 10px;">Self-Help and Motivational Books</h2>
+            <div class="books">
+                <div class="book" data-genre="Self-Help and Motivational Books">
+                    <img src="D:\Sandhya\wd\Website\images\a7.jpeg" alt="Book 3">
+                    <h2>Dale Carnegie</h2>
+                    <p>Books written: 7</p>
+                    <p>Genre: Self-help, motivational</p>
+                </div>
+                <div class="book" data-genre="Self-Help and Motivational Books">
+                    <img src="D:\Sandhya\wd\Website\images\a8.jpeg" alt="Book 3">
+                    <h2>Stephen R. Covey</h2>
+                    <p>Books written: 6</p>
+                    <p>Genre: Self-help, motivational</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="top-author animated fade-in">
+            <h2>Overall Top Author</h2>
+            <div class="author">
+                <img src="D:\Sandhya\wd\Website\images\adone.jpeg" alt="Top Author">
+                <h2>Stephen King</h2>
+                <p>Books written: 500+</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function filterAuthors(genre) {
+            const authors = document.querySelectorAll('.book');
+            authors.forEach(author => {
+                const authorGenre = author.getAttribute('data-genre');
+                if (genre === authorGenre || genre === 'All') {
+                    author.style.display = 'block';
+                } else {
+                    author.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
