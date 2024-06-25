@@ -10,7 +10,7 @@ This is a simple online bookstore built with HTML, CSS, and JavaScript.
 
 ## Installation (if applicable)
 
-- Clone this repository using `git clone https://github.com/your-username/bookstore-project.git`
+- Clone this repository using `git clone https://github.com/sandhya-og/web.git`
 - Open the `index.html` file in a web browser.
 
 ## Usage
